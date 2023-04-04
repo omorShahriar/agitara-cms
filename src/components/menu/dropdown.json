@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_menu_dropdowns",
+  "info": {
+    "displayName": "Dropdown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "MenuSection": {
+      "displayName": "sections",
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.sections"
+    }
+  }
+}

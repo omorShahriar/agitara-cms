@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_page_components_carousels",
+  "info": {
+    "displayName": "Carousel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "slides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.carousel-content"
+    }
+  }
+}

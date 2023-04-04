@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_meta_tags",
+  "info": {
+    "displayName": "MetaTag",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "name",
+        "property",
+        "httpEquiv"
+      ],
+      "default": "name"
+    },
+    "value": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    }
+  }
+}

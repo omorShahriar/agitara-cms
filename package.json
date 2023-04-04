@@ -1,0 +1,38 @@
+{
+  "name": "ka-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ka cms",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-color-picker": "^4.8.2",
+    "@strapi/plugin-i18n": "4.8.2",
+    "@strapi/plugin-seo": "^1.8.0",
+    "@strapi/plugin-users-permissions": "4.8.2",
+    "@strapi/provider-email-sendgrid": "^4.8.2",
+    "@strapi/provider-email-sendmail": "^4.8.2",
+    "@strapi/strapi": "4.8.2",
+    "pg": "8.10.0",
+    "sendmail": "^1.6.1",
+    "slugify": "^1.6.5",
+    "strapi-plugin-multi-select": "^1.1.0",
+    "strapi-plugin-populate-deep": "^2.0.0",
+    "strapi-provider-email-smtp": "^1.0.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "43e581b4-8cc5-4ced-94ad-90d8c3525512"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
