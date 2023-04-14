@@ -10,19 +10,19 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-color-picker": "^4.8.2",
-    "@strapi/plugin-i18n": "4.8.2",
+    "@strapi/plugin-color-picker": "^4.9.0",
+    "@strapi/plugin-i18n": "4.9.0",
     "@strapi/plugin-seo": "^1.8.0",
-    "@strapi/plugin-users-permissions": "4.8.2",
-    "@strapi/provider-email-sendgrid": "^4.8.2",
-    "@strapi/provider-email-sendmail": "^4.8.2",
-    "@strapi/strapi": "4.8.2",
+    "@strapi/plugin-users-permissions": "4.9.0",
+    "@strapi/provider-email-nodemailer": "^4.9.0",
+    "@strapi/provider-email-sendmail": "^4.9.0",
+    "@strapi/strapi": "4.9.0",
+    "date-fns": "^2.29.3",
     "pg": "8.10.0",
     "sendmail": "^1.6.1",
-    "slugify": "^1.6.5",
+    "slugify": "^1.6.6",
     "strapi-plugin-multi-select": "^1.1.0",
-    "strapi-plugin-populate-deep": "^2.0.0",
-    "strapi-provider-email-smtp": "^1.0.3"
+    "strapi-plugin-populate-deep": "^2.0.0"
   },
   "author": {
     "name": "A Strapi developer"
