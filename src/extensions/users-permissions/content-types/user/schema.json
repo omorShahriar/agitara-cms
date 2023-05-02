@@ -71,6 +71,18 @@
       "relation": "manyToMany",
       "target": "api::info.info",
       "mappedBy": "likedBy"
+    },
+    "likedDocs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::document.document",
+      "mappedBy": "likedBy"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "likedBy"
     }
   }
 }

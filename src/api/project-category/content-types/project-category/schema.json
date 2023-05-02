@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "info_categories",
+  "collectionName": "project_categories",
   "info": {
-    "singularName": "info-category",
-    "pluralName": "info-categories",
-    "displayName": "Info Category",
-    "description": ""
+    "singularName": "project-category",
+    "pluralName": "project-categories",
+    "displayName": "Project Category"
   },
   "options": {
     "draftAndPublish": true
@@ -26,10 +25,10 @@
       "required": true,
       "unique": true
     },
-    "infos": {
+    "projects": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::info.info",
+      "target": "api::project.project",
       "mappedBy": "category"
     }
   }

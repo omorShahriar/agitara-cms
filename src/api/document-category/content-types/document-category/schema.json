@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "info_categories",
+  "collectionName": "document_categories",
   "info": {
-    "singularName": "info-category",
-    "pluralName": "info-categories",
-    "displayName": "Info Category",
-    "description": ""
+    "singularName": "document-category",
+    "pluralName": "document-categories",
+    "displayName": "Document Category"
   },
   "options": {
     "draftAndPublish": true
@@ -23,13 +22,12 @@
         }
       },
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
-    "infos": {
+    "documents": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::info.info",
+      "target": "api::document.document",
       "mappedBy": "category"
     }
   }

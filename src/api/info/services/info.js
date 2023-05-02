@@ -26,10 +26,12 @@ module.exports = createCoreService("api::info.info", ({ strapi }) => ({
         ...query,
       }
     );
+
     return updatedInfo;
   },
   async unlikeInfo(args) {
     const { infoId, userId, query } = args;
+
     const infoToUnlike = await strapi.entityService.findOne(
       "api::info.info",
       infoId,
@@ -37,12 +39,13 @@ module.exports = createCoreService("api::info.info", ({ strapi }) => ({
         populate: ["likedBy"],
       }
     );
+
     const updatedInfo = await strapi.entityService.update(
       "api::info.info",
       infoId,
       {
         data: {
-          likedBy: infoToUnlike.likedBy.filter((liker) => liker !== userId),
+          likedBy: infoToUnlike.likedBy.filter((liker) => liker.id !== userId),
         },
         ...query,
       }
