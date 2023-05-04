@@ -22,6 +22,8 @@ module.exports = {
       settings: {
         defaultFrom: `noreply@agitara.panda-group.de`,
         defaultReplyTo: `noreply@agitara.panda-group.de`,
+        host: process.env.STRAPI_HOST,
+        port: process.env.STRAPI_PORT,
       },
     });
   },
