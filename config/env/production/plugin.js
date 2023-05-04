@@ -3,7 +3,7 @@ module.exports = ({ env }) => ({
     config: {
       provider: "nodemailer",
       providerOptions: {
-        host: env("SMTP_HOST", "smtp.gmail.com"),
+        host: env("SMTP_HOST", "agitara.panda-group.de"),
         port: env("SMTP_PORT", 465),
         auth: {
           user: env("SMTP_USERNAME"),
@@ -12,8 +12,8 @@ module.exports = ({ env }) => ({
         secure: true,
       },
       settings: {
-        defaultFrom: "omor.shahriar2000@gmail.com",
-        defaultReplyTo: "omor.shahriar2000@gmail.com",
+        defaultFrom: "noreply@agitara.panda-group.de",
+        defaultReplyTo: "noreply@agitara.panda-group.de",
       },
     },
   },

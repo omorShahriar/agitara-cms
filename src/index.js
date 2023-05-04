@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = {
   /**
@@ -7,7 +7,24 @@ module.exports = {
    *
    * This gives you an opportunity to extend code.
    */
-  register(/*{ strapi }*/) {},
+  register(/*{ strapi }*/) {
+    strapi.config.set("plugin.email", {
+      provider: "nodemailer",
+      providerOptions: {
+        host: "agitara.panda-group.de", //SMTP Host
+        auth: {
+          user: process.env.SMTP_USERNAME,
+          pass: process.env.SMTP_PASSWORD,
+        },
+        secure: true,
+        port: 465,
+      },
+      settings: {
+        defaultFrom: `noreply@agitara.panda-group.de`,
+        defaultReplyTo: `noreply@agitara.panda-group.de`,
+      },
+    });
+  },
 
   /**
    * An asynchronous bootstrap function that runs before
