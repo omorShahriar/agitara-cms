@@ -5,12 +5,12 @@ RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev l
 ARG NODE_ENV=production
 ENV NODE_ENV=${NODE_ENV}
 WORKDIR /opt/
-COPY ./package.json ./package-lock.json ./
+COPY ./package.json ./yarn.lock ./
 ENV PATH /opt/node_modules/.bin:$PATH
-RUN npm install --production
+RUN yarn install --frozen-lockfile
 WORKDIR /opt/app
 COPY ./ .
-RUN npm run build
+RUN yarn build
 
 FROM node:18-alpine
 # Installing libvips-dev for sharp Compatability
@@ -23,4 +23,4 @@ ENV PATH /opt/node_modules/.bin:$PATH
 WORKDIR /opt/app
 COPY --from=build /opt/app ./
 EXPOSE 1337
-CMD ["npm", "run","start"]
+CMD ["yarn","start"]

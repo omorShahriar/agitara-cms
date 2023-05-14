@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_more_infos",
+  "info": {
+    "displayName": "More Info"
+  },
+  "options": {},
+  "attributes": {
+    "headingBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-header"
+    },
+    "ctas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.cta"
+    }
+  }
+}

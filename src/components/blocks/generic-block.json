@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_generic_blocks",
+  "info": {
+    "displayName": "Service Block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "subheading": {
+      "type": "string",
+      "required": true
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.icon-card"
+    }
+  }
+}

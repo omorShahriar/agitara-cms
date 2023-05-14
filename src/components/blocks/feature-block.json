@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_feature_blocks",
+  "info": {
+    "displayName": "Feature Block"
+  },
+  "options": {},
+  "attributes": {
+    "headingBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-header"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.icon-card"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_ctas",
+  "info": {
+    "displayName": "CTA",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "filled",
+        "outline"
+      ]
+    },
+    "external": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

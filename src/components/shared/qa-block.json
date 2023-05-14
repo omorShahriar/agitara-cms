@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_qa_blocks",
+  "info": {
+    "displayName": "QA Block"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

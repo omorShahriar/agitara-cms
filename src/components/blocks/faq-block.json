@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_faq_blocks",
+  "info": {
+    "displayName": "faqBlock"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "qaBlock": {
+      "displayName": "QA Block",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.qa-block"
+    }
+  }
+}

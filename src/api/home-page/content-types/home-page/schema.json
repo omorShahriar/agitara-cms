@@ -16,26 +16,6 @@
     }
   },
   "attributes": {
-    "hero_slider": {
-      "type": "component",
-      "repeatable": false,
-      "component": "blocks.carousel",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "recentProducts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product.product"
-    },
-    "recentArticles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article"
-    },
     "SEO": {
       "type": "component",
       "repeatable": false,
@@ -45,6 +25,69 @@
           "localized": true
         }
       }
+    },
+    "heroBlock": {
+      "displayName": "Hero Block",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "blocks.hero-block"
+    },
+    "faqBlock": {
+      "displayName": "faqBlock",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "blocks.faq-block"
+    },
+    "serviceBlock": {
+      "displayName": "Generic Block",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "blocks.generic-block"
+    },
+    "infoBlock": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "blocks.more-info"
+    },
+    "featureBlock": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "blocks.feature-block"
+    },
+    "carouselBlock": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "blocks.carousel"
     }
   }
 }
