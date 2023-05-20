@@ -68,17 +68,17 @@
       },
       "type": "string"
     },
-    "likedBy": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "likedDocs"
-    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::document-category.document-category",
       "inversedBy": "documents"
+    },
+    "likedBy": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "docs"
     }
   }
 }

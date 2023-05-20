@@ -53,12 +53,6 @@
       "private": true,
       "required": true
     },
-    "likedBy": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "likedInfos"
-    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
@@ -81,6 +75,12 @@
       },
       "type": "string",
       "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "likedBy": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "infos"
     }
   }
 }

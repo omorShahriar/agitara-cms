@@ -9,8 +9,7 @@
     "displayName": "User"
   },
   "options": {
-    "draftAndPublish": false,
-    "timestamps": true
+    "draftAndPublish": false
   },
   "attributes": {
     "username": {
@@ -66,17 +65,17 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "likedInfos": {
+    "infos": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::info.info",
-      "mappedBy": "likedBy"
+      "inversedBy": "likedBy"
     },
-    "likedDocs": {
+    "docs": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::document.document",
-      "mappedBy": "likedBy"
+      "inversedBy": "likedBy"
     },
     "projects": {
       "type": "relation",
